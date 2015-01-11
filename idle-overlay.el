@@ -62,7 +62,7 @@
   "Idle-Overlay Minor Mode"
   :group 'idle-overlay
   (if (not idle-overlay-mode)
-      (idle-overlay-unoverlay)
+      (idle-overlay-remove-overlay)
     (unless idle-overlay-global-timer
       (setq idle-overlay-global-timer
             (run-with-idle-timer idle-overlay-idle-time
